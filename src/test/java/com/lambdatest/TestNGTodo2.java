@@ -13,7 +13,7 @@ import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.openqa.selenium.WebDriver;
+// import org.openqa.selenium.WebDriver;
 
 public class TestNGTodo2 {
 
@@ -23,7 +23,7 @@ public class TestNGTodo2 {
     @BeforeMethod
     public void setup(Method m, ITestContext ctx) throws MalformedURLException {
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Selenium-report/driver/chromedriver");
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
     }
 
     @Test
